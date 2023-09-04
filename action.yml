@@ -26,7 +26,7 @@ outputs:
     description: 'Flag indicating whether the docker image exists or not'
 runs:
   using: 'docker'
-  image: ${{ secrets.ACTION_IMAGE }}
+  image: 'Dockerfile'
   args:
     - ${{ inputs.region }}
     - ${{ inputs.repository-name }}
